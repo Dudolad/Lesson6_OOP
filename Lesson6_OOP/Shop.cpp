@@ -10,12 +10,19 @@ Shop::Shop()
 
 Product Shop::operator[](string title)
 {
+	for (int i = 0; i < arr.size(); i++)
+	{
+		if (arr[i].getTitle() == title)
+		{
+			return arr[i];
+		}
+	}
 	return Product();
 }
 
 Product& Shop::operator[](int n)
 {
-	// TODO: insert return statement here
+	return arr[n];
 }
 
 void Shop::addProduct(Product p)

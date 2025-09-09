@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Date.h"
 #include "Product.h"; 
+#include "Shop.h" 
 #include <iomanip>
 using namespace std;
 
@@ -9,13 +10,21 @@ int main()
 	Date d1;
 	Date d2(2026, 1, 1);
 
+
 	Product a;
+	cin >> a;
+
+	Shop ATB;
+	ATB.addProduct(a);
+	ATB.showInfo();
+
+	/*Product a;
 	cin >> a;
 	
 	cout << "------------------------------------------------\n";
 
 	Product b("Milk", 50.90, Date(2025, 9, 1), 3);
-	cout << a << endl << b;
+	cout << a << endl << b;*/
 
 	/*d1++;
 	d2--;
