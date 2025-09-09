@@ -11,11 +11,16 @@ int main()
 	Date d2(2026, 1, 1);
 
 
-	Product a;
-	cin >> a;
 
 	Shop ATB;
-	ATB.addProduct(a);
+	ATB.showInfo();
+
+	cout << "------------------------------------------------\n";
+
+	ATB[0].setPrice(200);
+	ATB["Bread"].setPrice(200);
+	cout << ATB["Bread"] << endl;
+	cout << "------------------------------------------------\n";
 	ATB.showInfo();
 
 	/*Product a;
